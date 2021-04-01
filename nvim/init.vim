@@ -1,7 +1,12 @@
 call plug#begin()
+" Themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dikiaap/minimalist'
+
+"Big boy plugins
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
 
 set t_Co=256
@@ -11,6 +16,7 @@ colorscheme minimalist
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
 set number
 set nobackup

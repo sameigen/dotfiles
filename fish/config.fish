@@ -1,4 +1,5 @@
 set -g -x PATH /usr/local/bin $PATH
 set -g -x fish_greeting ''
 
-alias vim='nvim'
+alias vim='~/Downloads/nvim-osx64/bin/nvim'
+alias vrc='~/Downloads/nvim-osx64/bin/nvim ~/Desktop/Personal/dotfiles/nvim/init.vim'
