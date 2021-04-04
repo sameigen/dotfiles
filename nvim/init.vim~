@@ -18,12 +18,10 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
-"Windows things
 let &shell = has('win32') ? 'powershell' : 'pwsh'
 set shellquote= shellpipe=\| shellxquote=
 set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
 set shellredir=\|\ Out-File\ -Encoding\ UTF8
-
 set number
 set nobackup
 set relativenumber
