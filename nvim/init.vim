@@ -12,6 +12,7 @@ call plug#end()
 set t_Co=256
 syntax on
 colorscheme nord
+highlight Normal guibg=none
 
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
