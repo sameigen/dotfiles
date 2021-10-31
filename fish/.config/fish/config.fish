@@ -7,3 +7,4 @@ set -g -x fish_greeting ''
 
 alias vim='nvim'
 alias vrc='nvim ~/dotfiles/nvim/init.vim'
+alias live='sh ~/dev/live/live-session.sh'

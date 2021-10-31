@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/sam'
 let g:netrw_dirhist_8='/Users/sameigen/Desktop/Personal/StL/websites/www.stl.cars/jim-mills'
 let g:netrw_dirhist_7='/Users/sameigen/Desktop/Personal/StL/websites/www.stl.cars'
 let g:netrw_dirhist_6='/Users/sameigen/Desktop/Personal/StL/websites'
