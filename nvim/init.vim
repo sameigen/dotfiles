@@ -2,7 +2,7 @@ call plug#begin()
 " Themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dikiaap/minimalist'
+Plug 'arcticicestudio/nord-vim'
 
 "Big boy plugins
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -11,7 +11,7 @@ call plug#end()
 
 set t_Co=256
 syntax on
-colorscheme minimalist
+colorscheme nord
 
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
@@ -19,12 +19,13 @@ let g:airline#extensions#tabline#enabled = 1
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
 "Windows things
-let &shell = has('win32') ? 'powershell' : 'pwsh'
-set shellquote= shellpipe=\| shellxquote=
-set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
-set shellredir=\|\ Out-File\ -Encoding\ UTF8
+"let &shell = has('win32') ? 'powershell' : 'pwsh'
+"set shellquote= shellpipe=\| shellxquote=
+"set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
+"set shellredir=\|\ Out-File\ -Encoding\ UTF8
 
 set number
+set signcolumn=yes
 set nobackup
 set relativenumber
 set nu
@@ -36,6 +37,8 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set hidden
+set nohlsearch
 
 map <up> <nop>
 map <down> <nop>
